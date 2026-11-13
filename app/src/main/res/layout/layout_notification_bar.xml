@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#E6000000"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/match_ended"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/carter_one"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_notif_see_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/see_ranking"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/carter_one"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_notif_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@android:color/white"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

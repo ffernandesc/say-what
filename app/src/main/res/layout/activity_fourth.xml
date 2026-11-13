@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".FourthActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/button_options"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/carter_one"
+        android:shadowColor="@color/blue_pressed"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/sound"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:fontFamily="@font/carter_one"
+        android:layout_marginBottom="8dp"/>
+
+    <SeekBar
+        android:id="@+id/sound_volume_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="32dp"
+        android:max="100"
+        android:progress="100"
+        android:progressTint="@color/yellow_pressed"
+        android:thumbTint="@color/yellow" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/change_language"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:fontFamily="@font/carter_one"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/language_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/white"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:id="@+id/create_account_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/create_account"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:fontFamily="@font/carter_one"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:hint="@string/player_input_title"
+        android:inputType="text"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:hint="@string/player_input_email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow_pressed"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/create_account"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/log_out" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnGoogleSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp" />
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:text="@string/music"-->
+    <!--        android:textColor="@color/red"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:fontFamily="@font/carter_one"-->
+    <!--        android:layout_marginBottom="8dp"/>-->
+
+    <!--    <SeekBar-->
+    <!--        android:id="@+id/music_volume_slider"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:layout_marginRight="10dp"-->
+    <!--        android:progressTint="@color/yellow"-->
+    <!--        android:thumbTint="@color/yellow_pressed"-->
+    <!--        android:max="100"-->
+    <!--        android:progress="80"-->
+    <!--        android:layout_marginBottom="32dp"/>-->
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<resources>
+
+    <!-- ========================= -->
+    <!-- App -->
+    <!-- ========================= -->
+    <string name="app_name">SayWhat?</string>
+
+    <!-- ========================= -->
+    <!-- Main Menu / Navigation -->
+    <!-- ========================= -->
+    <string name="button_singleplayer">Un jucător</string>
+    <string name="button_multiplayer">Multiplayer</string>
+    <string name="button_options">Opțiuni</string>
+    <string name="leaderboard">Clasament</string>
+    <string name="log_out">Deconectare</string>
+    <string name="logged_out">Deconectat</string>
+
+    <!-- ========================= -->
+    <!-- Buttons / Actions -->
+    <!-- ========================= -->
+    <string name="ok">OK</string>
+    <string name="cancel">Anulează</string>
+    <string name="yes_text">Da</string>
+    <string name="no_text">Nu</string>
+    <string name="retry_description">Reîncearcă</string>
+    <string name="exit_to_main_menu">Ieșire la meniul principal</string>
+    <string name="join">Alătură-te</string>
+
+    <!-- ========================= -->
+    <!-- Audio / Settings -->
+    <!-- ========================= -->
+    <string name="music">Volum muzică</string>
+    <string name="sound">Volum sunete</string>
+
+    <!-- ========================= -->
+    <!-- Video / Language -->
+    <!-- ========================= -->
+    <string name="flag">Steag</string>
+    <string name="change_language">Schimbă Limba</string>
+    <string name="language">Limbă</string>
+
+    <!-- ========================= -->
+    <!-- Player / Account -->
+    <!-- ========================= -->
+    <string name="player_input">Introdu numele tău</string>
+    <string name="player_input_title">Alege o poreclă</string>
+    <string name="player_input_email">Introdu adresa de e-mail</string>
+    <string name="name_required">Nume de utilizator obligatoriu</string>
+    <string name="email_required">E-mail obligatoriu</string>
+
+    <string name="create_account">Creează cont</string>
+    <string name="account_details_text">Detalii cont</string>
+    <string name="change_details_text">Modifică detaliile</string>
+    <string name="details_saved">Detalii salvate</string>
+
+    <string name="account_error">Eroare la încărcarea contului</string>
+    <string name="account_saving_error">Eroare la salvare: </string>
+    <string name="error_checking_account">Eroare la verificarea contului: </string>
+
+    <string name="welcome">Bun venit, </string>
+    <string name="welcome_back_options">Bun venit din nou, </string>
+
+    <!-- ========================= -->
+    <!-- Game Flow / States -->
+    <!-- ========================= -->
+    <string name="get_ready">Pregătește-te!</string>
+    <string name="your_turn">Rândul tău!</string>
+    <string name="not_your_turn">Nu este rândul tău!</string>
+
+    <string name="round">Runda 5</string>
+    <string name="round1">Runda </string>
+
+    <string name="game_over">JOC TERMINAT!</string>
+    <string name="starting">Se pornește…</string>
+    <string name="creating">Se creează…</string>
+
+    <!-- ========================= -->
+    <!-- Scores -->
+    <!-- ========================= -->
+    <string name="score">Scor: 0</string>
+    <string name="score_activity">Scor: </string>
+    <string name="score_gameover">Scor: 15</string>
+
+    <string name="personal_best">Cel mai bun scor: 50</string>
+    <string name="personal_best_activity">Cel mai bun scor: </string>
+
+    <!-- ========================= -->
+    <!-- Singleplayer / Game mode -->
+    <!-- ========================= -->
+    <string name="select_difficulty_title">Selectează Dificultatea</string>
+
+    <string-array name="difficulty_levels">
+        <item>4 Butoane (Clasic)</item>
+        <item>5 Butoane</item>
+        <item>6 Butoane</item>
+        <item>7 Butoane</item>
+        <item>8 Butoane (Extrem)</item>
+    </string-array>
+
+    <!-- ========================= -->
+    <!-- Multiplayer / Lobby -->
+    <!-- ========================= -->
+    <string name="multiplayer_access_title">Configurare multiplayer</string>
+    <string name="multiplayer_access_message">
+        Ai nevoie de un profil pentru a juca sau poți juca ca invitat.
+    </string>
+    <string name="play_as_guest">Joacă ca invitat</string>
+
+    <string name="create_match">Creează meci</string>
+    <string name="join_match">Alătură-te meciului</string>
+    <string name="enter_game_code">Introdu codul jocului:</string>
+    <string name="game_code">Codul jocului:</string>
+
+    <string name="wait_more_players">Așteaptă mai mulți jucători!</string>
+    <string name="waiting_for_host">Se așteaptă gazda…</string>
+
+    <!-- ========================= -->
+    <!-- Leaving / Confirmations -->
+    <!-- ========================= -->
+    <string name="leaving_game_title">Părăsire joc</string>
+    <string name="leaving_game_message">
+        Sigur vrei să părăsești jocul? Vei pierde tot progresul.
+    </string>
+
+    <string name="leaving_lobby_title">Părăsire lobby</string>
+    <string name="leaving_lobby_message">
+        Sigur vrei să părăsești lobby-ul? Vei pierde locul.
+    </string>
+
+    <!-- ========================= -->
+    <!-- Multiplayer Game States -->
+    <!-- ========================= -->
+    <string name="host_left">Gazda a părăsit meciul.</string>
+    <string name="game_over_">Joc terminat</string>
+    <string name="players_joined">Jucători alăturați: </string>
+    <string name="game_players_count">Jucători: %d</string>
+    <string name="player_no">Jucători rămași: 3 </string>
+    <string name="player_turn">Jucătorul 2</string>
+
+    <string name="players_remaining">"Jucători rămași: "</string>
+    <string name="game_player_watch">Jucătorul %s Privește!</string>
+    <string name="game_player_playing">Jucătorul\n%s\njoacă…</string>
+    <string name="game_new_button_unlocked">A fost adăugat un buton nou!</string>
+    <string name="eliminated_player">ELIMINAT!</string>
+
+    <!-- ========================= -->
+    <!-- Errors / Network -->
+    <!-- ========================= -->
+    <string name="failed_to_join">Nu s-a putut alătura</string>
+    <string name="game_not_found">Joc negăsit</string>
+    <string name="network_error">Eroare de rețea</string>
+    <string name="error_creating_game">Eroare la crearea jocului</string>
+    <string name="error_loading_game">Eroare la încărcarea jocului</string>
+
+    <!-- ========================= -->
+    <!-- Leaderboard -->
+    <!-- ========================= -->
+    <string name="error_missing_game_data">Eroare: Date de joc lipsă</string>
+    <string name="error_loading_results">Eroare la încărcarea rezultatelor</string>
+    <string name="failed_to_restart">Nu a reușit să repornească</string>
+    <string name="failed_to_load_leaderboard">Nu s-a putut încărca clasamentul</string>
+    <string name="top_50_players">TOP 50 JUCĂTORI</string>
+    <string name="player_leaderboard">Jucător</string>
+    <string name="score_leaderboard">Scor</string>
+    <string name="player_name_leaderboard">Nume jucător</string>
+
+    <!-- ========================= -->
+    <!-- Non-translatable / UI Symbols -->
+    <!-- ========================= -->
+
+    <string name="button_count">BUTTON_COUNT</string>
+    <string name="_4_buttons">4 butoane</string>
+    <string name="_4_buttons_classic">4 butoane (Clasic)</string>
+    <string name="_5_buttons">5 butoane</string>
+    <string name="_6_buttons">6 butoane</string>
+    <string name="_7_buttons">7 butoane</string>
+    <string name="_8_buttons">8 butoane</string>
+    <string name="_8_buttons_extreme">8 butoane (Extrem)</string>
+    <string name="win">AI CÂȘTIGAT!</string>
+    <string name="lose">AI PIERDUT!</string>
+    <string name="replay">Încă odată</string>
+    <string name="return_main_menu">Înapoi la Meniul Principal</string>
+    <string name="match_ended">Match Ended!</string>
+    <string name="see_ranking">Vezi Clasament</string>
+    <string name="lobby_closed_by_host">Lobby închis de gazdă</string>
+    <string name="correct_sequence">Corect!</string>
+
+</resources>

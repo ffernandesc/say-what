@@ -1,0 +1,199 @@
+<resources>
+
+    <!-- ========================= -->
+    <!-- App -->
+    <!-- ========================= -->
+    <string name="app_name">SayWhat?</string>
+
+    <!-- ========================= -->
+    <!-- Main Menu / Navigation -->
+    <!-- ========================= -->
+    <string name="button_singleplayer">Singleplayer</string>
+    <string name="button_multiplayer">Multiplayer</string>
+    <string name="button_options">Options</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="log_out">Log Out</string>
+    <string name="logged_out">Logged out</string>
+
+    <!-- ========================= -->
+    <!-- Buttons / Actions -->
+    <!-- ========================= -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    <string name="retry_description">Retry</string>
+    <string name="exit_to_main_menu">Exit to Main Menu</string>
+    <string name="start" translatable="false">START</string>
+    <string name="join">Join</string>
+
+    <!-- ========================= -->
+    <!-- Audio / Settings -->
+    <!-- ========================= -->
+    <string name="music">Music Volume</string>
+    <string name="sound">Sounds Volume</string>
+
+    <!-- ========================= -->
+    <!-- Video / Language -->
+    <!-- ========================= -->
+    <string name="flag">Flag</string>
+    <string name="change_language">Change Language</string>
+    <string name="language">Language</string>
+
+    <!-- ========================= -->
+    <!-- Player / Account -->
+    <!-- ========================= -->
+    <string name="player_input">Enter your name</string>
+    <string name="player_input_title">Choose a Nickname</string>
+    <string name="player_input_email">Enter your email</string>
+    <string name="name_required">Username Required</string>
+    <string name="email_required">Email Required</string>
+
+    <string name="create_account">Create Account</string>
+    <string name="account_details_text">Account Details</string>
+    <string name="change_details_text">Change Details</string>
+    <string name="details_saved">Details Saved</string>
+
+    <string name="account_error">Error Loading Account</string>
+    <string name="account_saving_error">Error Saving: </string>
+    <string name="error_checking_account">Error checking account: </string>
+
+    <string name="welcome">Welcome, </string>
+    <string name="welcome_back_options">Welcome back, </string>
+
+    <!-- ========================= -->
+    <!-- Game Flow / States -->
+    <!-- ========================= -->
+    <string name="get_ready">Get Ready!</string>
+    <string name="your_turn">Your Turn!</string>
+    <string name="not_your_turn">Not your turn!</string>
+
+    <string name="round">Round 5</string>
+    <string name="round1">Round  </string>
+
+    <string name="game_over">GAME OVER!</string>
+    <string name="starting">Starting…</string>
+    <string name="creating">Creating…</string>
+
+    <!-- ========================= -->
+    <!-- Scores -->
+    <!-- ========================= -->
+    <string name="score">Score: 0</string>
+    <string name="score_activity">Score: </string>
+    <string name="score_gameover">Score: 15</string>
+
+    <string name="personal_best">Personal Best: 50</string>
+    <string name="personal_best_activity">Personal Best: </string>
+
+    <!-- ========================= -->
+    <!-- Singleplayer / Game mode -->
+    <!-- ========================= -->
+    <string name="select_difficulty_title">Select Difficulty</string>
+    <string name="correct_sequence">Correct!</string>
+
+    <string-array name="difficulty_levels">
+        <item>4 Buttons (Classic)</item>
+        <item>5 Buttons</item>
+        <item>6 Buttons</item>
+        <item>7 Buttons</item>
+        <item>8 Buttons (Extreme)</item>
+    </string-array>
+
+    <!-- ========================= -->
+    <!-- Multiplayer / Lobby -->
+    <!-- ========================= -->
+    <string name="multiplayer_access_title">Multiplayer Setup</string>
+    <string name="multiplayer_access_message">
+        You need a profile to play, or you can play as a guest.
+    </string>
+    <string name="play_as_guest">Play as Guest</string>
+
+    <string name="create_match">Create Match</string>
+    <string name="join_match">Join Match</string>
+    <string name="enter_game_code">Enter game code:</string>
+    <string name="game_code">Game Code:</string>
+
+    <string name="wait_more_players">Wait for more players!</string>
+    <string name="waiting_for_host">Waiting for Host…</string>
+
+    <!-- ========================= -->
+    <!-- Leaving / Confirmations -->
+    <!-- ========================= -->
+    <string name="leaving_game_title">Leaving Game</string>
+    <string name="leaving_game_message">Are you sure you want to leave the game? You\'ll lose all progress.</string>
+    <string name="leaving_lobby_title">Leaving Lobby</string>
+    <string name="leaving_lobby_message">Are you sure you want to leave the lobby? You\'ll lose your spot.</string>
+    <string name="lobby_closed_by_host">Lobby closed by Host</string>
+    <string name="host_left">The Host has left the match.</string>
+    <string name="game_over_">Game Over</string>
+
+    <!-- ========================= -->
+    <!-- Multiplayer Game States -->
+    <!-- ========================= -->
+    <string name="players_joined">Players joined: </string>
+    <string name="game_players_count">Players: %d</string>
+    <string name="player_no">Players remaining: 3 </string>
+    <string name="player_turn">Player 2</string>
+
+    <string name="match_ended">Match Ended!</string>
+    <string name="see_ranking">See Ranking</string>
+
+    <string name="players_remaining">"Players remaining: "</string>
+    <string name="game_player_watch">Player\n%s\nWatch!</string>
+    <string name="game_player_playing">Player\n%s\nplaying…</string>
+    <string name="game_new_button_unlocked">A new button was added!</string>
+    <string name="eliminated_player">ELIMINATED!</string>
+
+    <!-- ========================= -->
+    <!-- Errors / Network -->
+    <!-- ========================= -->
+    <string name="failed_to_join">Failed to join</string>
+    <string name="game_not_found">Game not found</string>
+    <string name="network_error">Network error</string>
+    <string name="error_creating_game">Error creating game</string>
+    <string name="error_loading_game">Error loading game</string>
+    <string name="error_missing_game_data">Error: Missing Game Data</string>
+    <string name="error_loading_results">Error loading results</string>
+    <string name="failed_to_restart">Failed to restart</string>
+
+
+    <!-- ========================= -->
+    <!-- Leaderboard -->
+    <!-- ========================= -->
+    <string name="failed_to_load_leaderboard">Failed to load leaderboard</string>
+    <string name="top_50_players">TOP 50 PLAYERS</string>
+    <string name="numberrank" translatable="false">#</string>
+    <string name="player_leaderboard">Player</string>
+    <string name="score_leaderboard">Score</string>
+    <string name="player_name_leaderboard">Player Name</string>
+
+    <string name="win">YOU WON!</string>
+    <string name="lose">YOU LOST!</string>
+    <string name="replay">Replay</string>
+    <string name="return_main_menu">Return to Main Menu</string>
+
+    <!-- ========================= -->
+    <!-- Non-translatable / UI Symbols -->
+    <!-- ========================= -->
+    <string name="button1" translatable="false">⬤</string>
+    <string name="button2" translatable="false">⬤⬤</string>
+    <string name="button3" translatable="false">⬤\n⬤⬤</string>
+    <string name="button4" translatable="false">⬤⬤\n⬤⬤</string>
+    <string name="button5" translatable="false">⬤⬤\n⬤⬤⬤</string>
+    <string name="button6" translatable="false">⬤⬤⬤\n⬤⬤⬤</string>
+    <string name="button7" translatable="false">⬤⬤⬤\n⬤⬤⬤⬤</string>
+    <string name="button8" translatable="false">⬤⬤⬤⬤\n⬤⬤⬤⬤</string>
+
+    <string name="button_count">BUTTON_COUNT</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="_scorevalue" translatable="false">100</string>
+
+    <string name="_4_buttons">4 Buttons</string>
+    <string name="_4_buttons_classic">4 Buttons (Classic)</string>
+    <string name="_5_buttons">5 Buttons</string>
+    <string name="_6_buttons">6 Buttons</string>
+    <string name="_7_buttons">7 Buttons</string>
+    <string name="_8_buttons">8 Buttons</string>
+    <string name="_8_buttons_extreme">8 Buttons (Extreme)</string>
+
+</resources>

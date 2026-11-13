@@ -1,0 +1,189 @@
+<resources>
+
+    <!-- ========================= -->
+    <!-- App -->
+    <!-- ========================= -->
+    <string name="app_name">SayWhat?</string>
+
+    <!-- ========================= -->
+    <!-- Main Menu / Navigation -->
+    <!-- ========================= -->
+    <string name="button_singleplayer">Un jugador</string>
+    <string name="button_multiplayer">Multijugador</string>
+    <string name="button_options">Opciones</string>
+    <string name="leaderboard">Clasificación</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="logged_out">Sesión cerrada</string>
+
+    <!-- ========================= -->
+    <!-- Buttons / Actions -->
+    <!-- ========================= -->
+    <string name="ok">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="yes_text">Sí</string>
+    <string name="no_text">No</string>
+    <string name="retry_description">Reintentar</string>
+    <string name="exit_to_main_menu">Salir al menú principal</string>
+    <string name="join">Unirse</string>
+
+    <!-- ========================= -->
+    <!-- Audio / Settings -->
+    <!-- ========================= -->
+    <string name="music">Volumen de música</string>
+    <string name="sound">Volumen de sonidos</string>
+
+    <!-- ========================= -->
+    <!-- Video / Language -->
+    <!-- ========================= -->
+    <string name="flag">Bandera</string>
+    <string name="change_language">Cambiar Idioma</string>
+    <string name="language">Idioma</string>
+
+
+    <!-- ========================= -->
+    <!-- Player / Account -->
+    <!-- ========================= -->
+    <string name="player_input">Introduce tu nombre</string>
+    <string name="player_input_title">Elige un apodo</string>
+    <string name="player_input_email">Introduce tu correo electrónico</string>
+    <string name="name_required">Nombre de usuario obligatorio</string>
+    <string name="email_required">Correo electrónico obligatorio</string>
+
+    <string name="create_account">Crear cuenta</string>
+    <string name="account_details_text">Detalles de la cuenta</string>
+    <string name="change_details_text">Cambiar detalles</string>
+    <string name="details_saved">Detalles guardados</string>
+
+    <string name="account_error">Error al cargar la cuenta</string>
+    <string name="account_saving_error">Error al guardar: </string>
+    <string name="error_checking_account">Error al comprobar la cuenta: </string>
+
+    <string name="welcome">Bienvenido, </string>
+    <string name="welcome_back_options">Bienvenido de nuevo, </string>
+
+    <!-- ========================= -->
+    <!-- Game Flow / States -->
+    <!-- ========================= -->
+    <string name="get_ready">¡Prepárate!</string>
+    <string name="your_turn">¡Tu turno!</string>
+    <string name="not_your_turn">¡No es tu turno!</string>
+
+    <string name="round">Ronda 5</string>
+    <string name="round1">Ronda </string>
+
+    <string name="game_over">¡FIN DEL JUEGO!</string>
+    <string name="starting">Iniciando…</string>
+    <string name="creating">Creando…</string>
+
+    <!-- ========================= -->
+    <!-- Scores -->
+    <!-- ========================= -->
+    <string name="score">Puntuación: 0</string>
+    <string name="score_activity">Puntuación: </string>
+    <string name="score_gameover">Puntuación: 15</string>
+
+    <string name="personal_best">Mejor marca personal: 50</string>
+    <string name="personal_best_activity">Mejor marca personal: </string>
+
+    <!-- ========================= -->
+    <!-- Singleplayer / Game mode -->
+    <!-- ========================= -->
+    <string name="select_difficulty_title">Seleccionar Dificultad</string>
+
+    <string-array name="difficulty_levels">
+        <item>4 Botones (Clásico)</item>
+        <item>5 Botones</item>
+        <item>6 Botones</item>
+        <item>7 Botones</item>
+        <item>8 Botones (Extremo)</item>
+    </string-array>
+
+    <!-- ========================= -->
+    <!-- Multiplayer / Lobby -->
+    <!-- ========================= -->
+    <string name="multiplayer_access_title">Configuración multijugador</string>
+    <string name="multiplayer_access_message">
+        Necesitas un perfil para jugar, o puedes jugar como invitado.
+    </string>
+    <string name="play_as_guest">Jugar como invitado</string>
+
+    <string name="create_match">Crear partida</string>
+    <string name="join_match">Unirse a partida</string>
+    <string name="enter_game_code">Introduce el código de la partida:</string>
+    <string name="game_code">Código de la partida:</string>
+
+    <string name="wait_more_players">¡Espera a más jugadores!</string>
+    <string name="waiting_for_host">Esperando al anfitrión…</string>
+
+    <!-- ========================= -->
+    <!-- Leaving / Confirmations -->
+    <!-- ========================= -->
+    <string name="leaving_game_title">Salir de la partida</string>
+    <string name="leaving_game_message">
+        ¿Seguro que quieres salir de la partida? Perderás todo el progreso.
+    </string>
+
+    <string name="leaving_lobby_title">Salir del lobby</string>
+    <string name="leaving_lobby_message">
+        ¿Seguro que quieres salir del lobby? Perderás tu puesto.
+    </string>
+
+    <!-- ========================= -->
+    <!-- Multiplayer Game States -->
+    <!-- ========================= -->
+    <string name="host_left">El Anfitrión ha abandonado el partido.</string>
+    <string name="game_over_">Fin del juego</string>
+    <string name="players_joined">Jugadores unidos: </string>
+    <string name="game_players_count">Jugadores: %d</string>
+    <string name="player_no">Jugadores restantes: 3 </string>
+    <string name="player_turn">Jugador 2</string>
+
+    <string name="players_remaining">"Jugadores restantes: "</string>
+    <string name="game_player_watch">Jugador\n%s\n¡Observa!</string>
+    <string name="game_player_playing">Jugador\n%s\njugando…</string>
+    <string name="game_new_button_unlocked">¡Se ha añadido un nuevo botón!</string>
+
+    <!-- ========================= -->
+    <!-- Errors / Network -->
+    <!-- ========================= -->
+    <string name="eliminated_player">¡Eliminados!</string>
+    <string name="failed_to_join">No se pudo unir</string>
+    <string name="game_not_found">Partida no encontrada</string>
+    <string name="network_error">Error de red</string>
+    <string name="error_creating_game">Error al crear la partida</string>
+    <string name="error_loading_game">Error al cargar la partida</string>
+
+    <!-- ========================= -->
+    <!-- Leaderboard -->
+    <!-- ========================= -->
+    <string name="error_missing_game_data">Error: Datos del partido faltantes</string>
+    <string name="error_loading_results">Error al carger resultados</string>
+    <string name="failed_to_restart">No se pudo reiniciar</string>
+    <string name="failed_to_load_leaderboard">No se pudo cargar la clasificación</string>
+    <string name="top_50_players">TOP 50 JUGADORES</string>
+    <string name="player_leaderboard">Jugador</string>
+    <string name="score_leaderboard">Puntuación</string>
+    <string name="player_name_leaderboard">Nombre del jugador</string>
+
+    <!-- ========================= -->
+    <!-- Non-translatable / UI Symbols -->
+    <!-- ========================= -->
+
+    <string name="button_count">BUTTON_COUNT</string>
+    <string name="_8_buttons">8 botones</string>
+    <string name="_8_buttons_extreme">8 botones (Extremo)</string>
+    <string name="match_ended">Match Ended!</string>
+    <string name="win">¡HAS GANADO!</string>
+    <string name="lose">¡HAS PERDIDO!</string>
+    <string name="replay">Repetición</string>
+    <string name="return_main_menu">Volver al menú principal</string>
+    <string name="_4_buttons">4 botones</string>
+    <string name="_4_buttons_classic">4 botones (Clásico)</string>
+    <string name="_5_buttons">5 botones</string>
+    <string name="_6_buttons">6 botones</string>
+    <string name="_7_buttons">7 botones</string>
+    <string name="see_ranking">Véase Clasificación</string>
+    <string name="lobby_closed_by_host">Lobby cerrado por al anfitrión</string>
+    <string name="correct_sequence">¡Correcto!</string>
+
+</resources>

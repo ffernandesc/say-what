@@ -1,0 +1,188 @@
+<resources>
+
+    <!-- ========================= -->
+    <!-- App -->
+    <!-- ========================= -->
+    <string name="app_name">SayWhat?</string>
+
+    <!-- ========================= -->
+    <!-- Main Menu / Navigation -->
+    <!-- ========================= -->
+    <string name="button_singleplayer">Um jogador</string>
+    <string name="button_multiplayer">Multijogador</string>
+    <string name="button_options">Opções</string>
+    <string name="leaderboard">Classificação</string>
+    <string name="log_out">Terminar sessão</string>
+    <string name="logged_out">Sessão terminada</string>
+
+    <!-- ========================= -->
+    <!-- Buttons / Actions -->
+    <!-- ========================= -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="yes_text">Sim</string>
+    <string name="no_text">Não</string>
+    <string name="retry_description">Tentar novamente</string>
+    <string name="exit_to_main_menu">Sair para o menu principal</string>
+    <string name="join">Entrar</string>
+
+    <!-- ========================= -->
+    <!-- Audio / Settings -->
+    <!-- ========================= -->
+    <string name="music">Volume da música</string>
+    <string name="sound">Volume dos sons</string>
+
+    <!-- ========================= -->
+    <!-- Video / Language -->
+    <!-- ========================= -->
+    <string name="flag">Bandeira</string>
+    <string name="change_language">Mudar Idioma</string>
+    <string name="language">Idioma</string>
+
+    <!-- ========================= -->
+    <!-- Player / Account -->
+    <!-- ========================= -->
+    <string name="player_input">Introduz o teu nome</string>
+    <string name="player_input_title">Escolhe um nickname</string>
+    <string name="player_input_email">Introduz o teu e-mail</string>
+    <string name="name_required">Nome de utilizador obrigatório</string>
+    <string name="email_required">E-mail obrigatório</string>
+
+    <string name="create_account">Criar conta</string>
+    <string name="account_details_text">Detalhes da conta</string>
+    <string name="change_details_text">Alterar detalhes</string>
+    <string name="details_saved">Detalhes guardados</string>
+
+    <string name="account_error">Erro ao carregar a conta</string>
+    <string name="account_saving_error">Erro ao guardar: </string>
+    <string name="error_checking_account">Erro ao verificar a conta: </string>
+
+    <string name="welcome">Bem-vindo, </string>
+    <string name="welcome_back_options">Bem-vindo de volta, </string>
+
+    <!-- ========================= -->
+    <!-- Game Flow / States -->
+    <!-- ========================= -->
+    <string name="get_ready">Prepara-te!</string>
+    <string name="your_turn">A tua vez!</string>
+    <string name="not_your_turn">Não é a tua vez!</string>
+
+    <string name="round">Ronda 5</string>
+    <string name="round1">Ronda </string>
+
+    <string name="game_over">FIM DE JOGO!</string>
+    <string name="starting">A iniciar…</string>
+    <string name="creating">A criar…</string>
+
+    <!-- ========================= -->
+    <!-- Scores -->
+    <!-- ========================= -->
+    <string name="score">Pontuação: 0</string>
+    <string name="score_activity">Pontuação: </string>
+    <string name="score_gameover">Pontuação: 15</string>
+
+    <string name="personal_best">Melhor pontuação: 50</string>
+    <string name="personal_best_activity">Melhor pontuação: </string>
+
+    <!-- ========================= -->
+    <!-- Singleplayer / Game mode -->
+    <!-- ========================= -->
+    <string name="select_difficulty_title">Selecionar Dificuldade</string>
+
+    <string-array name="difficulty_levels">
+        <item>4 Botões (Clássico)</item>
+        <item>5 Botões</item>
+        <item>6 Botões</item>
+        <item>7 Botões</item>
+        <item>8 Botões (Extremo)</item>
+    </string-array>
+
+    <!-- ========================= -->
+    <!-- Multiplayer / Lobby -->
+    <!-- ========================= -->
+    <string name="multiplayer_access_title">Configuração multijogador</string>
+    <string name="multiplayer_access_message">
+        Precisas de um perfil para jogar, ou podes jogar como convidado.
+    </string>
+    <string name="play_as_guest">Jogar como convidado</string>
+
+    <string name="create_match">Criar partida</string>
+    <string name="join_match">Entrar numa partida</string>
+    <string name="enter_game_code">Introduz o código da partida:</string>
+    <string name="game_code">Código da partida:</string>
+
+    <string name="wait_more_players">Aguardar por mais jogadores!</string>
+    <string name="waiting_for_host">A aguardar pelo anfitrião…</string>
+
+    <!-- ========================= -->
+    <!-- Leaving / Confirmations -->
+    <!-- ========================= -->
+    <string name="leaving_game_title">Sair do jogo</string>
+    <string name="leaving_game_message">
+        Tens a certeza que queres sair do jogo? Vais perder todo o progresso.
+    </string>
+
+    <string name="leaving_lobby_title">Sair do lobby</string>
+    <string name="leaving_lobby_message">
+        Tens a certeza que queres sair do lobby? Vais perder o teu lugar.
+    </string>
+
+    <!-- ========================= -->
+    <!-- Multiplayer Game States -->
+    <!-- ========================= -->
+    <string name="host_left">O Anfitrião saiu do jogo.</string>
+    <string name="game_over_">Fim de jogo</string>
+    <string name="players_joined">Jogadores ligados: </string>
+    <string name="game_players_count">Jogadores: %d</string>
+    <string name="player_no">Jogadores restantes: 3 </string>
+    <string name="player_turn">Jogador 2</string>
+
+    <string name="players_remaining">"Jogadores restantes: "</string>
+    <string name="game_player_watch">Jogador\n%s\nObserva!</string>
+    <string name="game_player_playing">Jogador\n%s\na jogar…</string>
+    <string name="game_new_button_unlocked">Um novo botão foi adicionado!</string>
+
+    <!-- ========================= -->
+    <!-- Errors / Network -->
+    <!-- ========================= -->
+    <string name="eliminated_player">Eliminado!</string>
+    <string name="failed_to_join">Falha ao entrar</string>
+    <string name="game_not_found">Partida não encontrada</string>
+    <string name="network_error">Erro de rede</string>
+    <string name="error_creating_game">Erro ao criar a partida</string>
+    <string name="error_loading_game">Erro ao carregar a partida</string>
+
+    <!-- ========================= -->
+    <!-- Leaderboard -->
+    <!-- ========================= -->
+    <string name="error_missing_game_data">Erro: Dados do jogo em falta</string>
+    <string name="error_loading_results">Erro ao carregar resultados</string>
+    <string name="failed_to_restart">Falhou ao reiniciar</string>
+    <string name="failed_to_load_leaderboard">Falha ao carregar a classificação</string>
+    <string name="top_50_players">TOP 50 JOGADORES</string>
+    <string name="player_leaderboard">Jogador</string>
+    <string name="score_leaderboard">Pontuação</string>
+    <string name="player_name_leaderboard">Nome do jogador</string>
+
+    <!-- ========================= -->
+    <!-- Non-translatable / UI Symbols -->
+    <!-- ========================= -->
+
+    <string name="button_count">BUTTON_COUNT</string>
+    <string name="_8_buttons">8 botões</string>
+    <string name="_8_buttons_extreme">8 botões (Extremo)</string>
+    <string name="match_ended">Match Ended!</string>
+    <string name="win">GANHASTE!</string>
+    <string name="lose">PERDESTE!</string>
+    <string name="replay">Repetição</string>
+    <string name="return_main_menu">Voltar ao Menu Principal</string>
+    <string name="_4_buttons">4 botões</string>
+    <string name="_4_buttons_classic">4 botões (Clássico)</string>
+    <string name="_5_buttons">5 botões</string>
+    <string name="_6_buttons">6 botões</string>
+    <string name="_7_buttons">7 botões</string>
+    <string name="see_ranking">Ver Classificação</string>
+    <string name="lobby_closed_by_host">Átrio encerrado pelo anfitrião</string>
+    <string name="correct_sequence">Corrigir!</string>
+
+</resources>

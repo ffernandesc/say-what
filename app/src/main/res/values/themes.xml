@@ -1,0 +1,10 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SayWhat" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="displayOptions">homeAsUp|showHome</item>
+    </style>
+
+    <style name="Theme.SayWhat" parent="Base.Theme.SayWhat" />
+</resources>

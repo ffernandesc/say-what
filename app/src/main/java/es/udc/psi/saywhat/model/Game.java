@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.game;
+package es.udc.psi.saywhat.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;

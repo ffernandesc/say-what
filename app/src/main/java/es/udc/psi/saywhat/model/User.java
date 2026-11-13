@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.user;
+package es.udc.psi.saywhat.model;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 

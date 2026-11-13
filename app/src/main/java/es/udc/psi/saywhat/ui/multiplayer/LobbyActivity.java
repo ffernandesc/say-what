@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.Multiplayer;
+package es.udc.psi.saywhat.ui.multiplayer;
 
 import android.content.Context;
 import android.content.Intent;
@@ -29,10 +29,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import es.udc.psi.saywhat.FourthActivity;
 import es.udc.psi.saywhat.R;
 import es.udc.psi.saywhat.databinding.ActivityLobbyBinding;
-import es.udc.psi.saywhat.game.Game;
+import es.udc.psi.saywhat.model.Game;
+import es.udc.psi.saywhat.ui.settings.SettingsActivity;
 
 public class LobbyActivity extends AppCompatActivity {
 
@@ -71,7 +71,7 @@ public class LobbyActivity extends AppCompatActivity {
         gameId = getIntent().getStringExtra("game_id");
         isHost = getIntent().getBooleanExtra("is_host", false);
 
-        SharedPreferences prefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
         myUid = prefs.getString("local_user_id", "");
 
         binding.tvGameCode.setText(gameId);

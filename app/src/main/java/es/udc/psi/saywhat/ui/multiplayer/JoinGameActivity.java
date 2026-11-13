@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.Multiplayer;
+package es.udc.psi.saywhat.ui.multiplayer;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,10 +15,10 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import es.udc.psi.saywhat.FourthActivity;
 import es.udc.psi.saywhat.R;
 import es.udc.psi.saywhat.databinding.ActivityJoinGameBinding;
-import es.udc.psi.saywhat.game.Game;
+import es.udc.psi.saywhat.model.Game;
+import es.udc.psi.saywhat.ui.settings.SettingsActivity;
 
 public class JoinGameActivity extends AppCompatActivity {
 
@@ -47,7 +47,7 @@ public class JoinGameActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
         playerName = getIntent().getStringExtra("player_name");
-        SharedPreferences prefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
         localUserId = prefs.getString("local_user_id", "");
 
         binding.btnJoin.setOnClickListener(v -> {

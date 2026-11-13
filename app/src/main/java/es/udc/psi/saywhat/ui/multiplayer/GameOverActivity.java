@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.Multiplayer;
+package es.udc.psi.saywhat.ui.multiplayer;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,13 +20,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import es.udc.psi.saywhat.Adapters.LeaderboardAdapter;
-import es.udc.psi.saywhat.FourthActivity;
-import es.udc.psi.saywhat.MainActivity;
 import es.udc.psi.saywhat.R;
 import es.udc.psi.saywhat.databinding.ActivityGameOverBinding;
-import es.udc.psi.saywhat.game.Game;
-import es.udc.psi.saywhat.user.User;
+import es.udc.psi.saywhat.model.Game;
+import es.udc.psi.saywhat.model.User;
+import es.udc.psi.saywhat.ui.adapters.LeaderboardAdapter;
+import es.udc.psi.saywhat.ui.main.MainActivity;
+import es.udc.psi.saywhat.ui.settings.SettingsActivity;
 
 public class GameOverActivity extends AppCompatActivity {
 
@@ -48,7 +48,7 @@ public class GameOverActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
         gameId = getIntent().getStringExtra("game_id");
-        SharedPreferences prefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
         myUid = prefs.getString("local_user_id", null);
 
         if (gameId == null || myUid == null) {

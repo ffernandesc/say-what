@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.Singleplayer;
+package es.udc.psi.saywhat.ui.singleplayer;
 
 import android.content.Context;
 import android.content.Intent;
@@ -25,14 +25,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-import es.udc.psi.saywhat.FourthActivity;
 import es.udc.psi.saywhat.R;
-import es.udc.psi.saywhat.databinding.ActivitySecondBinding;
-import es.udc.psi.saywhat.user.User;
+import es.udc.psi.saywhat.databinding.ActivitySingleplayerGameBinding;
+import es.udc.psi.saywhat.model.User;
+import es.udc.psi.saywhat.ui.settings.SettingsActivity;
 
-public class SecondActivity extends AppCompatActivity {
+public class SingleplayerGameActivity extends AppCompatActivity {
 
-    private ActivitySecondBinding binding;
+    private ActivitySingleplayerGameBinding binding;
 
     private ArrayList<Integer> sequence = new ArrayList<>();
     private static final String KEY_HIGH_SCORE = "high_score_singleplayer";
@@ -61,7 +61,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivitySecondBinding.inflate(getLayoutInflater());
+        binding = ActivitySingleplayerGameBinding.inflate(getLayoutInflater());
         EdgeToEdge.enable(this);
         setContentView(binding.getRoot());
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -88,7 +88,7 @@ public class SecondActivity extends AppCompatActivity {
         });
 
         binding.btnLeaderboard.setOnClickListener(v -> {
-            Intent intent = new Intent(SecondActivity.this, LeaderboardActivity.class);
+            Intent intent = new Intent(SingleplayerGameActivity.this, LeaderboardActivity.class);
             intent.putExtra("DIFFICULTY_KEY", String.valueOf(numberOfButtons));
             startActivity(intent);
 
@@ -284,7 +284,7 @@ public class SecondActivity extends AppCompatActivity {
         //disable the buttons so they cant be pressed
         setButtonsEnabled(false);
 
-        SharedPreferences prefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
 
         int currentHighScore = prefs.getInt(KEY_HIGH_SCORE, 0);
 

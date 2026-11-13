@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.Singleplayer;
+package es.udc.psi.saywhat.ui.singleplayer;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -19,11 +19,11 @@ import com.google.firebase.firestore.Query;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.udc.psi.saywhat.Adapters.LeaderboardAdapter;
-import es.udc.psi.saywhat.FourthActivity;
 import es.udc.psi.saywhat.R;
 import es.udc.psi.saywhat.databinding.ActivityLeaderboardBinding;
-import es.udc.psi.saywhat.user.User;
+import es.udc.psi.saywhat.model.User;
+import es.udc.psi.saywhat.ui.adapters.LeaderboardAdapter;
+import es.udc.psi.saywhat.ui.settings.SettingsActivity;
 
 public class LeaderboardActivity extends AppCompatActivity {
 
@@ -41,7 +41,7 @@ public class LeaderboardActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         // current User ID for highlighting
-        SharedPreferences prefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
         String currentUserId = prefs.getString("local_user_id", "");
 
         // current difficulty for leaderboard tab

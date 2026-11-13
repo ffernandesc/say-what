@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.Adapters;
+package es.udc.psi.saywhat.ui.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.Multiplayer;
+package es.udc.psi.saywhat.ui.multiplayer;
 
 import android.content.Context;
 import android.content.Intent;
@@ -22,10 +22,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import es.udc.psi.saywhat.FourthActivity;
 import es.udc.psi.saywhat.R;
 import es.udc.psi.saywhat.databinding.ActivityGameBinding;
-import es.udc.psi.saywhat.game.Game;
+import es.udc.psi.saywhat.model.Game;
+import es.udc.psi.saywhat.ui.settings.SettingsActivity;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -73,10 +73,10 @@ public class GameActivity extends AppCompatActivity {
 
         gameId = getIntent().getStringExtra("game_id");
 
-        android.content.SharedPreferences prefs = getSharedPreferences(FourthActivity.PREFS_NAME, android.content.Context.MODE_PRIVATE);
+        android.content.SharedPreferences prefs = getSharedPreferences(SettingsActivity.PREFS_NAME, android.content.Context.MODE_PRIVATE);
         myUid = prefs.getString("local_user_id", null);
 
-        int volProgress = prefs.getInt(FourthActivity.KEY_SOUND_VOLUME, 100);
+        int volProgress = prefs.getInt(SettingsActivity.KEY_SOUND_VOLUME, 100);
         soundVolume = volProgress / 100f;
 
         if (gameId == null) {
@@ -259,8 +259,8 @@ public class GameActivity extends AppCompatActivity {
                 .setTitle(R.string.game_over_)
                 .setMessage(R.string.host_left)
                 .setPositiveButton("OK", (dialog, which) -> {
-                    // navigate to ThirdActivity (Join/Create screen)
-                    Intent intent = new Intent(GameActivity.this, ThirdActivity.class);
+                    // navigate to MultiplayerMenuActivity (Join/Create screen)
+                    Intent intent = new Intent(GameActivity.this, MultiplayerMenuActivity.class);
                     intent.putExtra("player_name", playerNameFinal);
                     // clear flags to avoid back stack issues
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -562,12 +562,12 @@ public class GameActivity extends AppCompatActivity {
         super.onPause();
 
         if (gameId != null && status != null && !status.equals("ENDED") && !status.equals("HOST_LEFT")) {
-            getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE)
+            getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE)
                     .edit()
                     .putString("pending_game_id", gameId)
                     .apply();
         } else {
-            getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE)
+            getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE)
                     .edit()
                     .remove("pending_game_id")
                     .apply();

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:orientation="vertical"
-    tools:context=".FourthActivity">
+    tools:context=".ui.settings.SettingsActivity">
 
     <TextView
         android:id="@+id/textView"

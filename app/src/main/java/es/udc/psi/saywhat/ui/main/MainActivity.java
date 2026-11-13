@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat;
+package es.udc.psi.saywhat.ui.main;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -21,10 +21,12 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.*;
 
-import es.udc.psi.saywhat.Multiplayer.ThirdActivity;
-import es.udc.psi.saywhat.Singleplayer.SecondActivity;
+import es.udc.psi.saywhat.R;
 import es.udc.psi.saywhat.databinding.ActivityMainBinding;
-import es.udc.psi.saywhat.user.User;
+import es.udc.psi.saywhat.model.User;
+import es.udc.psi.saywhat.ui.multiplayer.MultiplayerMenuActivity;
+import es.udc.psi.saywhat.ui.settings.SettingsActivity;
+import es.udc.psi.saywhat.ui.singleplayer.SingleplayerGameActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
 
         if (sharedPrefs == null) {
-            sharedPrefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+            sharedPrefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
         }
         applyVolumeSettings();
         checkLocaleChange();
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        sharedPrefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        sharedPrefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
         loadLocale();
 
         EdgeToEdge.enable(this);
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        sharedPrefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        sharedPrefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -119,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadLocale() {
         //get saved language (default to english)
-        String langCode = sharedPrefs.getString(FourthActivity.KEY_LANGUAGE, "en");
+        String langCode = sharedPrefs.getString(SettingsActivity.KEY_LANGUAGE, "en");
         currentLanguageCode = langCode;
         setLocale(langCode);
     }
@@ -134,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkLocaleChange() {
 
-        String savedLang = sharedPrefs.getString(FourthActivity.KEY_LANGUAGE, "en");
+        String savedLang = sharedPrefs.getString(SettingsActivity.KEY_LANGUAGE, "en");
 
         if (!savedLang.equals(currentLanguageCode)) {
             setLocale(savedLang);
@@ -188,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
     private void applyVolumeSettings() {
         if (sharedPrefs == null) return;
 
-        int soundVolumeProgress = sharedPrefs.getInt(FourthActivity.KEY_SOUND_VOLUME, 100);
+        int soundVolumeProgress = sharedPrefs.getInt(SettingsActivity.KEY_SOUND_VOLUME, 100);
         float soundVolume = soundVolumeProgress / 100f;
 
         if (clickPlayer != null) {
@@ -244,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startGameWithDifficulty(int buttonCount) {
 
-        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        Intent intent = new Intent(MainActivity.this, SingleplayerGameActivity.class);
         intent.putExtra(getString(R.string.button_count), buttonCount);
 
         startActivity(intent);
@@ -327,7 +329,7 @@ public class MainActivity extends AppCompatActivity {
 
             animateButton(v, () -> {
 
-                Intent intent = new Intent(MainActivity.this, FourthActivity.class);
+                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(intent);
 
             });
@@ -336,7 +338,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToMultiplayer(String playerName){
-        Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+        Intent intent = new Intent(MainActivity.this, MultiplayerMenuActivity.class);
         intent.putExtra("player_name", playerName);
         startActivity(intent);
     }
@@ -348,7 +350,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Create Account
         builder.setPositiveButton(R.string.create_account, (dialog, which) -> {
-            Intent intent = new Intent(MainActivity.this, FourthActivity.class);
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
         });
 

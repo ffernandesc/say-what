@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/black"
     android:padding="16dp"
-    tools:context=".Multiplayer.GameOverActivity">
+    tools:context=".ui.multiplayer.GameOverActivity">
 
     <TextView
         android:id="@+id/tv_win"

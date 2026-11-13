@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.Multiplayer;
+package es.udc.psi.saywhat.ui.multiplayer;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -23,15 +23,15 @@ import java.util.Random;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.ListenerRegistration;
 
-import es.udc.psi.saywhat.FourthActivity;
 import es.udc.psi.saywhat.R;
-import es.udc.psi.saywhat.databinding.ActivityThirdBinding;
+import es.udc.psi.saywhat.databinding.ActivityMultiplayerMenuBinding;
 import es.udc.psi.saywhat.databinding.LayoutNotificationBarBinding;
-import es.udc.psi.saywhat.game.Game;
+import es.udc.psi.saywhat.model.Game;
+import es.udc.psi.saywhat.ui.settings.SettingsActivity;
 
-public class ThirdActivity extends AppCompatActivity {
+public class MultiplayerMenuActivity extends AppCompatActivity {
 
-    private ActivityThirdBinding binding;
+    private ActivityMultiplayerMenuBinding binding;
     private LayoutNotificationBarBinding notificationBinding;
     private FirebaseFirestore db;
     private String localUserId;
@@ -47,7 +47,7 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
-        binding = ActivityThirdBinding.inflate(getLayoutInflater());
+        binding = ActivityMultiplayerMenuBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         notificationBinding = binding.notificationOverlay;
@@ -58,7 +58,7 @@ public class ThirdActivity extends AppCompatActivity {
             binding.tvWelcomePlayer.setText(String.format("%s%s", getString(R.string.welcome), playerName));
         }
 
-        SharedPreferences prefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
         localUserId = prefs.getString("local_user_id", "unknown_user");
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -74,7 +74,7 @@ public class ThirdActivity extends AppCompatActivity {
         binding.btnCreateMatch.setOnClickListener(v -> createMatch());
 
         binding.btnJoinMatch.setOnClickListener(v -> {
-            Intent intent = new Intent(ThirdActivity.this, JoinGameActivity.class);
+            Intent intent = new Intent(MultiplayerMenuActivity.this, JoinGameActivity.class);
             intent.putExtra("player_name", playerName);
             startActivity(intent);
         });
@@ -100,7 +100,7 @@ public class ThirdActivity extends AppCompatActivity {
     }
 
     private void checkPendingGame() {
-        SharedPreferences prefs = getSharedPreferences(FourthActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(SettingsActivity.PREFS_NAME, Context.MODE_PRIVATE);
         String pendingGameId = prefs.getString("pending_game_id", null);
 
         if (pendingGameId == null) return;
@@ -132,7 +132,7 @@ public class ThirdActivity extends AppCompatActivity {
 
             notificationHandler.removeCallbacks(hideNotificationRunnable);
 
-            Intent intent = new Intent(ThirdActivity.this, GameOverActivity.class);
+            Intent intent = new Intent(MultiplayerMenuActivity.this, GameOverActivity.class);
             intent.putExtra("game_id", gameId);
             startActivity(intent);
 
@@ -189,7 +189,7 @@ public class ThirdActivity extends AppCompatActivity {
         db.collection("games").document(gameId)
                 .set(newGame)
                 .addOnSuccessListener(aVoid -> {
-                    Intent intent = new Intent(ThirdActivity.this, LobbyActivity.class);
+                    Intent intent = new Intent(MultiplayerMenuActivity.this, LobbyActivity.class);
                     intent.putExtra("game_id", gameId);
                     intent.putExtra("is_host", true);
                     startActivity(intent);

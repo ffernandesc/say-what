@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat;
+package es.udc.psi.saywhat.ui.settings;
 
 import android.content.Context;
 import android.content.Intent;
@@ -33,13 +33,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-import es.udc.psi.saywhat.Adapters.LanguageAdapter;
-import es.udc.psi.saywhat.databinding.ActivityFourthBinding;
-import es.udc.psi.saywhat.user.User;
+import es.udc.psi.saywhat.R;
+import es.udc.psi.saywhat.databinding.ActivitySettingsBinding;
+import es.udc.psi.saywhat.model.User;
+import es.udc.psi.saywhat.ui.adapters.LanguageAdapter;
 
-public class FourthActivity extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity {
 
-    private ActivityFourthBinding binding;
+    private ActivitySettingsBinding binding;
     private SharedPreferences sharedPrefs;
     private FirebaseFirestore db;
     private String localUserId;
@@ -55,7 +56,7 @@ public class FourthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
-        binding = ActivityFourthBinding.inflate(getLayoutInflater());
+        binding = ActivitySettingsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         sharedPrefs = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
 

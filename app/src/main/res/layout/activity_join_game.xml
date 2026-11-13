@@ -9,7 +9,7 @@
     android:background="@color/black"
     android:padding="30dp"
     android:gravity="center"
-    tools:context=".Multiplayer.JoinGameActivity">
+    tools:context=".ui.multiplayer.JoinGameActivity">
 
     <TextView
         android:id="@+id/tv_enter_game_code"

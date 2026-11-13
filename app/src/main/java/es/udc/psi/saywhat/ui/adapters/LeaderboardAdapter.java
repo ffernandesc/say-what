@@ -1,4 +1,4 @@
-package es.udc.psi.saywhat.Adapters;
+package es.udc.psi.saywhat.ui.adapters;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -15,7 +15,7 @@ import java.util.Map;
 
 import es.udc.psi.saywhat.R;
 import es.udc.psi.saywhat.databinding.ItemLeaderboardBinding;
-import es.udc.psi.saywhat.user.User;
+import es.udc.psi.saywhat.model.User;
 
 public class LeaderboardAdapter extends RecyclerView.Adapter<LeaderboardAdapter.ViewHolder> {
 

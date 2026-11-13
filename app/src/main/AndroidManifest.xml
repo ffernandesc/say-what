@@ -11,31 +11,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SayWhat">
         <activity
-            android:name=".Multiplayer.GameOverActivity"
+            android:name=".ui.multiplayer.GameOverActivity"
             android:exported="false" />
         <activity
-            android:name=".Singleplayer.LeaderboardActivity"
+            android:name=".ui.singleplayer.LeaderboardActivity"
             android:exported="false" />
         <activity
-            android:name=".Multiplayer.GameActivity"
+            android:name=".ui.multiplayer.GameActivity"
             android:exported="false" />
         <activity
-            android:name=".Multiplayer.JoinGameActivity"
+            android:name=".ui.multiplayer.JoinGameActivity"
             android:exported="false" />
         <activity
-            android:name=".Multiplayer.LobbyActivity"
+            android:name=".ui.multiplayer.LobbyActivity"
             android:exported="false" />
         <activity
-            android:name=".FourthActivity"
+            android:name=".ui.settings.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".Multiplayer.ThirdActivity"
+            android:name=".ui.multiplayer.MultiplayerMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".Singleplayer.SecondActivity"
+            android:name=".ui.singleplayer.SingleplayerGameActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -10,7 +10,7 @@ This project was created as a course project at the University of A Coruña (UDC
 
 This project is shared as a portfolio showcase of a university course project. It is provided for viewing and is not intended for production use or redistribution. No license is granted for the project code; third-party components remain subject to their own licenses and rights. This notice is subject to applicable law and the hosting platform’s terms.
 
-The project is provided as is, without warranties. To the extent permitted by applicable law, the author disclaims liability for damages arising from its use or misuse. Anyone using the project is responsible for their own use.
+The project is provided as is, without warranties. To the extent permitted by applicable law, the authors disclaim liability for damages arising from its use or misuse. Anyone using the project is responsible for their own use.
 
 ## Built with
 
